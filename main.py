@@ -1,14 +1,10 @@
-print("cual es la contraseña?")
-contraseña = ("Eureka")
-V = 3
-ac = False
-while V > 0 and ac == False:
-    pwd = input() 
-    if contraseña == pwd:
-        print("correcto")
-        ac = True
-    else:
-        V = V - 1
-        print("fallaste, te quedan ", V ," vidas")
-        print("bloqueado")
-print("has entrado")
+print("intorudce A")
+	A = int(input("A"))
+	print("introduce B")
+	B = int(input("B"))
+	print(" A vale ", A," y B vale",B,)
+print("segundo ejercicio:")
+	print("la suma vale:", A + B,)
+	print("la resta vale:" A - B)
+	print("la multiplicación vale:" A * B)
+	print("la multiplicación vale:" A / B)

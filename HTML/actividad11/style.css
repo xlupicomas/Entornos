@@ -16,5 +16,9 @@ h3{
 }
 a{
     color: green;
-    
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(96, 10, 209);
+    text-decoration: underline;
 }

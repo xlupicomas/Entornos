@@ -42,7 +42,7 @@ input{
     line-height: 1px;
 }
 @media screen and (min-width: 768px) {
-    button{
+    .boton{
         display: none;
     }
         
@@ -50,6 +50,10 @@ input{
 @media screen and (max-width: 768px) {
     nav{
         display: none;
+    }
+    .boton{
+        align-self: center;
+        padding: 10px;
     }
 }
 @media screen and (max-width: 480px) {

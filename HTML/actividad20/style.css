@@ -1,0 +1,113 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 140, 255);
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    font-size: large;
+
+    display: inline-block;
+    position: relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+a:hover{
+    transition: 0.9s;
+    transform: rotateY(360deg);
+    
+      color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+ul{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    gap: 30px;
+}
+li{
+    text-decoration: none;
+}
+input{
+    align-self: center;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    line-height: 1px;
+    margin-right: 20px;
+}
+.navH1{
+    padding-left: 20px;
+    color: white;
+}
+
+
+
+h1{
+    padding: left 20px; ;
+}
+main{
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+}
+.P1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 50px;
+
+}
+.P3{
+    width: 50%;
+}
+.P2{
+    width: 50%;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.T1{
+    text-align: left;
+    width: 50%;
+}
+.T2{
+    text-align: center;
+}
+img{
+    width: 475px;
+    height: 350px;
+    border-radius: 5px;
+}
+.floats{
+    float: left;
+}
+@media screen and (min-width: 768px) {
+    .boton{
+        display: none;
+    }
+        
+}
+@media screen and (max-width: 768px) {
+    nav{
+        display: none;
+    }
+    .boton{
+        align-self: center;
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 480px) {
+    nav{
+        display: none;
+    }
+      input{
+        display: none;
+      }
+}

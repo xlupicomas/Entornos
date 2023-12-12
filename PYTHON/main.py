@@ -1,5 +1,6 @@
 import pygame
 from elementos import Nave
+from elementos import Fondo
 pygame.init()
 pantalla = pygame.display.set_mode((800,600))
 reloj = pygame.time.Clock()
@@ -8,7 +9,7 @@ FPS = 60
 #imagen_avion = pygame.image.load("PYTHON/cohete.png")
 #avion = pygame.transform.scale(imagen_avion,(60,60))
 #avion_rect = avion.get_rect()
-
+fondo = Fondo()
 salir = False
 
 nave = Nave()
@@ -30,8 +31,8 @@ while not salir:
     #if teclas[pygame.K_DOWN]:
      #   posTop += 1
     #gestionar cambios 
-    pantalla.fill((255,255,255))
-
+    #pantalla.fill((255,255,255))
+    fondo.dibujar()
     #pygame.draw.rect(pantalla, (255,255,255), pygame.Rect(posIzqd, posTop,60,60))
     #pantalla.blit(avion, (posIzqd,posTop))
     nave.dibujar()

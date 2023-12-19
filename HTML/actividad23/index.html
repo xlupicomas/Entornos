@@ -17,9 +17,17 @@
     </main>
     <script>
         const button = document.querySelector("button");
+        let Boolean
         button.addEventListener("click", function() {
             let titol = document.getElementById("div");
-            titol.textContent = "Este texto este en español";
+
+            if(Boolean == true){
+                titol.textContent = "Este texto este en español";
+                Boolean = false
+            }else{
+                titol.textContent = "this text are in english";
+                Boolean = true
+            }
         });
 
         const botonColor = document.getElementById("boton")
@@ -34,11 +42,6 @@
             
         });
 
-        const boton = document.getElementById("boton")
-        boton.addEventListener("click", function() {
-            let titol = document.getElementById("div");
-            titol.textContent = "this text are in english";
-        });
     </script>
 </body>
 

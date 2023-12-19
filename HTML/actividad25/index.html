@@ -26,7 +26,7 @@
           let boto = document.getElementsByTagName("p");
           let x = 0
           while(x < boto.length){
-              if (boto[x].textContent.length > 260){
+              if (boto[x].textContent.length > 260 || boto[x].textContent.includes("Mike")){
                   boto[x].classList.add("f0")
                   boto[x].addEventListener("click", function() {
                       alert("has seleccionado un parrafo ")

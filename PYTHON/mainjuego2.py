@@ -18,7 +18,11 @@ posicion = (200,200)
 nave = elementos2.Nave(posicion)
 
 #creamos un grupo de sprites
+
+
+
 grupo_sprites = pygame.sprite.Group(nave)
+grupo_sprites.add(elementos2.Fondo())
 grupo_sprites.add(elementos2.Nave((100,100)))
 grupo_sprites.add(elementos2.Nave((200,100)))
 grupo_sprites.add(elementos2.Nave((300,100)))
@@ -47,6 +51,8 @@ while running:
 
     #capturamos las teclas
     teclas = pygame.key.get_pressed()
+    if teclas[pygame.K_SPACE]:
+        nave.disparar(grupo_sprites)
 
 
     #pintaremos

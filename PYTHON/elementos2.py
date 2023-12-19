@@ -5,13 +5,15 @@ class Nave(pygame.sprite.Sprite):
     def __init__(self, posicion):
         super().__init__()
 
-        self.imagennave = [pygame.image.load("nave-espacial.png"), pygame.image.load("cohete.png")]
+        imagen = [pygame.image.load("nave-espacial.png"), pygame.image.load("astronave.png"), ]
+        self.imagennave = [pygame.transform.scale(imagen[0], (60, 60)), pygame.transform.scale(imagen[1], (60, 60))]
         self.indicenave = 0
         self.image = self.imagennave[self.indicenave]
         self.contador_imagen = 0
         self.rect = self.image.get_rect()
         #actualizamos la posicion del rectangulo para que coincida con la posicion
         self.rect.topleft = posicion
+        self.ultimoDisparo = 0
     
     #update
     def update(self, *args: any, **kwargs: any):
@@ -35,6 +37,13 @@ class Nave(pygame.sprite.Sprite):
         self.rect.x -= 2
         limite = 0
         self.rect.x = max(self.rect.x, limite)
+
+    def disparar(self, grupo_sprites):
+        
+        if self.ultimoDisparo > momento_actual + 200:
+            bala = Bala(self.rect.x + self.image.get_width() / 2, self.rect.y)
+            grupo_sprites.add(bala)
+            self.ultimoDisparo = momento_actual
     #def draw()
     #   pass
 
@@ -51,3 +60,28 @@ class Enemigo(pygame.sprite.Sprite):
         self.rect.topleft = posicion
     def update(self, *args: any, **kwargs: any):
         self.rect.y += 1
+        #capturamos la pantalla
+        pantalla = pygame.display.get_surface()
+        if (self.rect.y > pantalla.get_height()):
+            self.kill()
+class Fondo:
+    def __init__(self)-> None:
+        super().__init__()
+        pantalla = pygame.display.get_surface()
+        imagen = pygame.image.load("espacio4.jpg")
+        self.imagen = pygame.transform.scale(imagen, (pantalla.get_width(), pantalla.get_height()))
+        #creamos el rect
+        self.rect = self.image.get_rect()
+        #actualizamos la posicion del rectangulo para que coincida con la posicion
+        self.rect.topleft = (0,0)
+class Bala(pygame.sprite.Sprite):
+    def __init__(self, posicion) -> None:
+        super().__init__()
+        imagen_cargada = pygame.image.load("bola-de-fuego.png")
+        
+        self.image = pygame.Surface(5,10)
+        self.image.fill(255,0,0)
+        self.rect = self.image.get_rect()
+        self.rect.center = posicion
+    def update(self, *args: any, **kwargs: any) -> None:
+        self.rect.y -= 5

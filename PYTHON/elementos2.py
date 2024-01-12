@@ -46,13 +46,13 @@ class Nave(pygame.sprite.Sprite):
        
 
     def moverDerecha(self):
-        self.rect.x += 2
+        self.rect.x += 4
         pantalla = pygame.display.get_surface()
         limite = pantalla.get_width()
         self.rect.x = min(limite - self.image.get_width(), self.rect.x)
 
     def moverIzquierda(self):
-        self.rect.x -= 2
+        self.rect.x -= 4
         limite = 0
         self.rect.x = max(self.rect.x, limite)
 
@@ -100,7 +100,14 @@ class Fondo(pygame.sprite.Sprite):
         #creamos el rect
         self.rect = self.image.get_rect()
         #actualizamos la posicion del rectangulo para que coincida con la posicion
-        self.rect.topleft = (0,0)
+        self.rect.topleft = posicion
+        
+    def update(self, *args: any, **kwargs: any):
+        self.rect.y += 1
+
+        pantalla = pygame.display.get_surface()
+        if self.rect.y >= pantalla.get_height():
+            self.rect.y = - pantalla.get_height()
 class Bala(pygame.sprite.Sprite):
     def __init__(self, posicion) -> None:
         super().__init__()

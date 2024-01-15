@@ -28,6 +28,20 @@ body {
     background-color: skyblue;
     border-radius: 10px;
 }
+h2{
+    color: white;
+    text-align: center;
+}
+h3{
+    color: white;
+}
+button{
+    border-radius: 25%;
+}
+.button2{
+    margin-left: 195px;
+    
+}
 .boton{
     margin-left: 141px;
     padding: 10px;
@@ -51,6 +65,7 @@ h1 {
     font-size: 1.75em;
     margin-bottom: 10px;
 }
+
 
 #inputbox {
     position: relative;
@@ -79,12 +94,58 @@ h1 {
     border-radius: 22.5px;
     color: #fff;
 }
+.todas li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3f5f80f3;
+    box-shadow: 10px 10px 10px white;
+    margin: 15px;
+    padding: 10px;
+    min-height: 45px;
+    cursor: pointer;
+    border-radius: 22.5px;
+    color: #fff;
+}
+.hechas li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3f5f80f3;
+    box-shadow: 10px 10px 10px white;
+    margin: 15px;
+    padding: 10px;
+    min-height: 45px;
+    cursor: pointer;
+    border-radius: 22.5px;
+    color: #fff;
+}
 .TODOS i{
     position: relative;
     background-color: rgba(255, 68, 0, 0.404);
     right: 10px;
     bottom: 45px;
 }
+.hechas i{
+    position: relative;
+    background-color: rgba(255, 68, 0, 0.404);
+    right: 10px;
+    bottom: 45px;
+}
+.todas i{
+    position: relative;
+    background-color: rgba(255, 68, 0, 0.404);
+    right: 10px;
+    bottom: 45px;
+}
 .TODOS li.done{
+    background-color: red;
+}
+.todas li.done{
+    background-color: red;
+}
+.hechas li.done{
     background-color: red;
 }

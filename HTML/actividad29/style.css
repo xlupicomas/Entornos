@@ -6,8 +6,8 @@
     flex-wrap: wrap;
     background-color: rgba(255, 68, 0, 0.527);
     border-radius: 15px;
-    min-width: 1250px;
-    max-width: 1250px;
+    min-width: 1200px;
+    max-width: 1200px;
 }
 
 .carta{
@@ -34,6 +34,11 @@ body{
     bottom: 6px;
     border-radius: 12px;
     box-shadow: 5px 5px 5px rgba(71, 70, 70, 0.397);
+}
+.precio{
+    margin-top: 5px;
+    border: 0px;
+    justify-self: center;
 }
 p{
     margin: 5px;
@@ -107,4 +112,13 @@ input{
 }
 .displayNone{
     display: none;
+}
+.displayNone2{
+    display: none;
+}
+.dateDiv{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-top: 5px;
 }

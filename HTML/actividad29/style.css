@@ -116,6 +116,12 @@ input{
 .displayNone2{
     display: none;
 }
+.displayNone3{
+    display: none;
+}
+.displayNone4{
+    display: none;
+}
 .dateDiv{
     display: flex;
     justify-content: center;

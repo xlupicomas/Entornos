@@ -66,12 +66,29 @@ function searchPrice(){
                 let dateFinal = document.getElementById("dateFinal")
                 let dateInicioHTML = document.getElementsByClassName("dateInicio")
                 let dateFinalHTML = document.getElementsByClassName("dateFinal")
-                let n = 0
-                console.log($(dateInicio).val());
-                console.log($(dateFinal).val());
-                console.log($(dateInicioHTML[n]).text());
-                console.log($(dateFinalHTML[n]).text())
+                let carta = $(".carta")
+                for(let n = 0; n < carta.length; n++){
+                    if ($(dateInicio).val() == ''){
+                        carta[n].classList.remove("displayNone3")  
+                        console.log("remove");
+                    }else{
+                    if($(dateInicio).val() <= $(dateInicioHTML[n]).text()){
+                        console.log("INICIO: dentro del rango");
+                    }else{
+                        carta[n].classList.add("displayNone3")
+                    }
+                }
+                    if ($(dateFinal).val() == ''){
+                        carta[n].classList.remove("displayNone4")  
+                    }else{
+                    if($(dateFinal).val() >= $(dateFinalHTML[n]).text()){
+                        console.log("FIN: dentro del rango");
+                    }else{
+                        carta[n].classList.add("displayNone4")
+                    }
+                }
+                }
+                
             });
         });
     }
-  

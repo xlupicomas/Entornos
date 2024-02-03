@@ -128,3 +128,16 @@ input{
     justify-content: space-between;
     margin-top: 5px;
 }
+@media screen and (max-width: 1024px) {
+    .contenedor{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: rgba(255, 68, 0, 0.527);
+        border-radius: 15px;
+        min-width: 700px;
+        max-width: 700px;
+    }
+}

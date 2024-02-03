@@ -17,7 +17,7 @@ $(document).ready(function () {
         let texto = $("#inputbox")
         let textoescrito = texto.val()
         let puntero = document.createElement("i")
-        let elemento = "<div><li><p>" + textoescrito + "</p></li><i class='cruz'>x</i></div>"
+        let elemento = "<div class='divComent'><li><p>" + textoescrito + "</p></li><i class='cruz'>x</i></div>"
         $("#list").append(elemento)
         $(elemento).ready(function () {
             $(".cruz").click(function () {
@@ -28,4 +28,3 @@ $(document).ready(function () {
 
     })
 });
-

@@ -45,11 +45,10 @@ input{
 .TODOS i{
     position: relative;
     background-color: red;
-    padding: 7px;
+    padding: 10px;
     cursor: pointer;
     border-radius: 50px;
-    right: -892px;
-    bottom: 57px;
+
 }
 #button{
     grid-row: 1/2;
@@ -62,4 +61,13 @@ input{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.divComent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+.divComent li{
+    padding-right: 97%;
 }

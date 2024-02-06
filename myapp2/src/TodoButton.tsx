@@ -3,21 +3,14 @@ import TodoItem from "./TodoItem";
 import { Button } from "react-bootstrap";
 
 function TodoButton() {
-    const [cont, setCont]
+    const [cont, setCont] = React.useState(0)
 
-
-    function addTask(texto: string) {
-        setTasks((currentTasks) => [...currentTasks, "Nueva Tarea"])
-    }
     return (
         <div>
-            <h2>La Meva Llista de Tasques</h2>
-            <ul>
-                {tasks.map((task, index) => (
-                    <TodoItem key={index} content={task} />
-                ))}
-            </ul>
-            <Button variant="success" onClick={()=> addTask("aa")}>Añadir Tarea</Button>
+            <p>{cont}</p>
+            <Button variant="success" onClick={() => setCont(prevCont => prevCont + 1)}>+1</Button>
         </div>
     );
 }
+
+export default TodoButton;

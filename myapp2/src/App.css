@@ -27,6 +27,17 @@
 .App-link {
   color: #61dafb;
 }
+.borrar{
+  background-color: red;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 15px;
+  margin-left: 10px;
+}
+.liContenedor{
+  display: flex;
+  margin-bottom: 10px;
+}
 
 @keyframes App-logo-spin {
   from {

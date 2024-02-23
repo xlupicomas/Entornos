@@ -1,5 +1,5 @@
 import React from "react";
-
+import img from "./bola-de-fuego.png";
 interface estructura {
     producto: string;
     cantidad: number;

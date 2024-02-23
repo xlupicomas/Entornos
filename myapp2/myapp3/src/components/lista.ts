@@ -1,3 +1,4 @@
+import img from "./bola-de-fuego.png";
 export const filas = [{
     producto: "manzana",
     cantidad: 2,
@@ -5,7 +6,7 @@ export const filas = [{
     tienda: "Mercadona",
     notas: "compra 3",
     comprado: true,
-    imagen: "bola-de-fuego.png",
+    imagen: img,
 },
 {
     producto: "leche",
@@ -14,7 +15,7 @@ export const filas = [{
     tienda: "Mercadona",
     notas: "desnatada",
     comprado: false,
-    imagen: "bola-de-fuego.png",
+    imagen: img,
 },
 {
     producto: "galletas",
@@ -23,7 +24,7 @@ export const filas = [{
     tienda: "Mercadona",
     notas: "oreo",
     comprado: true,
-    imagen: "bola-de-fuego.png",
+    imagen: img,
 },
 {
     producto: "carne picada",
@@ -32,7 +33,7 @@ export const filas = [{
     tienda: "Mercadona",
     notas: "1 kg",
     comprado: false,
-    imagen: "bola-de-fuego.png",
+    imagen: img,
 },
 {
     producto: "queso",
@@ -41,6 +42,6 @@ export const filas = [{
     tienda: "Mercadona",
     notas: "light",
     comprado: true,
-    imagen: "bola-de-fuego.png",
+    imagen: img,
 },
 ]

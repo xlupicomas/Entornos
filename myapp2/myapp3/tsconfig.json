@@ -22,5 +22,5 @@
   },
   "include": [
     "src"
-, "myapp3/src/components"  ]
+  ]
 }

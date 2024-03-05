@@ -21,14 +21,14 @@ function App() {
     <div>
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="/">Home</Navbar.Brand>
+        <Navbar.Brand href="Entornos/myapp4/build/index.html/">Home</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/PuntosDeInteres">PuntosDeInteres</Nav.Link>
-            <Nav.Link href="/Hoteles">Hoteles</Nav.Link>
-            <Nav.Link href="/Restaurantes">Restaurantes</Nav.Link>
-            <Nav.Link href="/actividades">actividades</Nav.Link>
+            <Nav.Link href="Entornos/myapp4/build/index.html/PuntosDeInteres">PuntosDeInteres</Nav.Link>
+            <Nav.Link href="Entornos/myapp4/build/index.html/Hoteles">Hoteles</Nav.Link>
+            <Nav.Link href="Entornos/myapp4/build/index.html/Restaurantes">Restaurantes</Nav.Link>
+            <Nav.Link href="Entornos/myapp4/build/index.html/actividades">actividades</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -37,11 +37,11 @@ function App() {
     <div className="App">
       
         <Routes>
-          <Route path="/PuntosDeInteres" element={<Interes/>} />
-          <Route path="/Hoteles" element={<Hoteles/>}/>
-          <Route path="/Restaurantes" element={<Restaurantes/>}/>
-          <Route path="/actividades" element={<Actividades/>}/>
-          <Route path="/" element={<Home />}/>
+          <Route path="Entornos/myapp4/build/index.html/PuntosDeInteres" element={<Interes/>} />
+          <Route path="Entornos/myapp4/build/index.html/Hoteles" element={<Hoteles/>}/>
+          <Route path="Entornos/myapp4/build/index.html/Restaurantes" element={<Restaurantes/>}/>
+          <Route path="Entornos/myapp4/build/index.html/actividades" element={<Actividades/>}/>
+          <Route path="Entornos/myapp4/build/index.html/" element={<Home />}/>
         </Routes>
     </div>
     </BrowserRouter>

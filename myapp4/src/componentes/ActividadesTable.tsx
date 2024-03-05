@@ -1,5 +1,5 @@
 import React from "react";
-import { filas } from "./PuntosDeInteres"
+import { filas } from "./actividades"
 
 function Table() {
     return (

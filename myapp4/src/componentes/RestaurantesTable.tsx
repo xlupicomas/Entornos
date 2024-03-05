@@ -1,34 +1,24 @@
 import React from "react";
-import { filas } from "./PuntosDeInteres"
+import { filas } from "./restaurante"
+import { Col, Row } from "react-bootstrap";
 
-function Table() {
+function RestauranteTable() {
     return (
-        <table className="table">
-            <thead>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Calle</th>
-                    <th>Tipo</th>
-                    <th>Notes</th>
-                    <th>Imatge</th>
-                </tr>
-            </thead>
-            <tbody>
+        <div className="card">
+            <Row>
                 {filas.map((filas, indice) => (
-                    <tr key={indice}>
-                        <td>{filas.Nombre}</td>
-                        <td>{filas.Calle}</td>
-                        <td>{filas.Tipo}</td>
-                        <td>{filas.Notas}</td>
-                        <td>
-                            <img src={filas.imagen} alt={"foto"} style={{ maxWidth: '100px' }} />
-                        </td>
-                    </tr>
+                    <Col xs={12} sm={6} md={4} lg={3}>
+                        <div className="card-body" key={indice}>
+                            <h5 className="card-title">{filas.Nombre}</h5>
+                            <p className="card-text">{filas.Descripción}</p>
+                            <p className="card-text">{filas.Contacto}</p>
+                        </div>
+                    </Col>
                 ))}
-            </tbody>
-        </table>
+            </Row>
+        </div>
     );
 
 
 }
-export default Table
+export default RestauranteTable

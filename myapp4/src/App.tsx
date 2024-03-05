@@ -19,22 +19,21 @@ import ActividadesTable from "./componentes/ActividadesTable";
 function App() {
   return (
     <div>
-      <Navbar bg="primary" data-bs-theme="dark">
-        <Container>
-          <Navbar.Brand href="/">Home</Navbar.Brand>
+    <Navbar expand="lg" className="bg-body-tertiary">
+      <Container>
+        <Navbar.Brand href="/">Home</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/PuntosDeInteres">Punts d'Interés</Nav.Link>
-            <Nav.Link href="/actividades">actividades</Nav.Link>
+            <Nav.Link href="/PuntosDeInteres">PuntosDeInteres</Nav.Link>
             <Nav.Link href="/Hoteles">Hoteles</Nav.Link>
             <Nav.Link href="/Restaurantes">Restaurantes</Nav.Link>
+            <Nav.Link href="/actividades">actividades</Nav.Link>
           </Nav>
-          <form className="d-flex" role="search">
-            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"></input>
-            <button className="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </Container>
-      </Navbar>
-    <BrowserRouter>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+<BrowserRouter>
     <div className="App">
       
         <Routes>
@@ -46,8 +45,22 @@ function App() {
         </Routes>
     </div>
     </BrowserRouter>
-    </div>
-  );
+</div>
+);
+    {/* <div>
+      <Navbar bg="primary" data-bs-theme="dark">
+        <Container>
+          <Navbar.Brand href="/">Home</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="/PuntosDeInteres">Punts d'Interés</Nav.Link>
+            <Nav.Link href="/actividades">actividades</Nav.Link>
+            <Nav.Link href="/Hoteles">Hoteles</Nav.Link>
+            <Nav.Link href="/Restaurantes">Restaurantes</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
+    
+    </div> */}
   function Home() {
     return (
       <div>

@@ -22,37 +22,13 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-/*.HotelTable{
-  background-color: #c99a3554;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
- .tarjeta{
-  background-color: #28342a23;
-  max-width: 175px;
-  min-width: 175px;
-  max-height: 250px;
-  min-height: 250px;
-  border-radius: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-} */
-.grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-  background-color: rgba(172, 255, 47, 0.432);
-}
+
 .card-body{
   background-color: rgba(83, 134, 179, 0.486);
-  max-width: 200px;
-  min-width: 200px;
-  max-height: 275px;
-  min-height: 275px;
+  max-width: 250px;
+  min-width: 250px;
+  max-height: 300px;
+  min-height: 300px;
   margin-bottom: 10px;
   margin-top: 10px;
   border-radius: 25px;
@@ -64,8 +40,12 @@
 .App-link {
   color: #61dafb;
 }
+.row{
+  --bs-gutter-x: 0rem;
+  background-color: rgba(45, 143, 77, 0.514);
+}
 
-.bg-primary {
+.bg-body-tertiary {
   --bs-bg-opacity: 1;
   background-color:rgba(6, 141, 42, 0.541) !important;
 }

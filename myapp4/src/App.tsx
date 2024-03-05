@@ -7,7 +7,8 @@ import {
   Router,
   Routes,
   Route,
-  Link
+  Link,
+  NavLink
 } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -26,14 +27,14 @@ function App() {
 
       <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="/">Home</Navbar.Brand>
+        <Nav.Link as={Link} to="/">Home</Nav.Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Link to="PuntosDeInteres">PuntosDeInteres</Link>
-            <Nav.Link href="Hoteles">Hoteles</Nav.Link>
-            <Nav.Link href="Restaurantes">Restaurantes</Nav.Link>
-            <Nav.Link href="/actividades">actividades</Nav.Link>
+            <Nav.Link as={Link} to="PuntosDeInteres">PuntosDeInteres</Nav.Link>
+            <Nav.Link as={Link} to="Hoteles">Hoteles</Nav.Link>
+            <Nav.Link as={Link} to="Restaurantes">Restaurantes</Nav.Link>
+            <Nav.Link as={Link} to="actividades">actividades</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

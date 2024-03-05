@@ -4,6 +4,7 @@ import './App.css';
 import Table from './componentes/table';
 import {
   BrowserRouter,
+  Router,
   Routes,
   Route,
   Link
@@ -19,29 +20,31 @@ import ActividadesTable from "./componentes/ActividadesTable";
 function App() {
   return (
     <div>
-    <Navbar expand="lg" className="bg-body-tertiary">
+    
+<BrowserRouter>
+    <div className="App">
+
+      <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
         <Navbar.Brand href="/">Home</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="Entornos/myapp4/build/PuntosDeInteres">PuntosDeInteres</Nav.Link>
-            <Nav.Link href="/Hoteles">Hoteles</Nav.Link>
-            <Nav.Link href="Entornos/myapp4/build/Restaurantes">Restaurantes</Nav.Link>
+            <Link to="PuntosDeInteres">PuntosDeInteres</Link>
+            <Nav.Link href="Hoteles">Hoteles</Nav.Link>
+            <Nav.Link href="Restaurantes">Restaurantes</Nav.Link>
             <Nav.Link href="/actividades">actividades</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
-<BrowserRouter>
-    <div className="App">
-      
+
         <Routes>
-          <Route path="Entornos/myapp4/build/PuntosDeInteres" element={<Interes/>} />
-          <Route path="Entornos/myapp4/build/Hoteles" element={<Hoteles/>}/>
+          <Route path="/PuntosDeInteres" element={<Interes/>} />
+          <Route path="/Hoteles" element={<Hoteles/>}/>
           <Route path="/Restaurantes" element={<Restaurantes/>}/>
-          <Route path="Entornos/myapp4/build/index.html/actividades" element={<Actividades/>}/>
-          <Route path="Entornos/myapp4/build/index.html/" element={<Home />}/>
+          <Route path="/actividades" element={<Actividades/>}/>
+          <Route index element={<Home />}/>
         </Routes>
     </div>
     </BrowserRouter>

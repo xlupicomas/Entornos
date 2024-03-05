@@ -25,9 +25,9 @@ function App() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="Entornos/myapp4/build/index.html/PuntosDeInteres">PuntosDeInteres</Nav.Link>
+            <Nav.Link href="Entornos/myapp4/build/PuntosDeInteres">PuntosDeInteres</Nav.Link>
             <Nav.Link href="/Hoteles">Hoteles</Nav.Link>
-            <Nav.Link href="Entornos/myapp4/build/index.html/Restaurantes">Restaurantes</Nav.Link>
+            <Nav.Link href="Entornos/myapp4/build/Restaurantes">Restaurantes</Nav.Link>
             <Nav.Link href="/actividades">actividades</Nav.Link>
           </Nav>
         </Navbar.Collapse>
@@ -37,8 +37,8 @@ function App() {
     <div className="App">
       
         <Routes>
-          <Route path="Entornos/myapp4/build/index.html/PuntosDeInteres" element={<Interes/>} />
-          <Route path="Entornos/myapp4/build/index.html/Hoteles" element={<Hoteles/>}/>
+          <Route path="Entornos/myapp4/build/PuntosDeInteres" element={<Interes/>} />
+          <Route path="Entornos/myapp4/build/Hoteles" element={<Hoteles/>}/>
           <Route path="/Restaurantes" element={<Restaurantes/>}/>
           <Route path="Entornos/myapp4/build/index.html/actividades" element={<Actividades/>}/>
           <Route path="Entornos/myapp4/build/index.html/" element={<Home />}/>

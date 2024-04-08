@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>actividad 21</title>
+</head>
+<body>
+    <header>PRIMER EJERCICIO DE JS</header>
+    <button onclick="mas()">grande</button>
+    <button onclick="menos()">pequeño</button>
+    <main>
+        <div id="div" class="f0">
+            <p>¿Este Texto cambia?</p>
+        </div>
+    </main>
+    <script>
+        function mas(){
+            let boto = document.getElementById("div");
+            //for (const boto of parrafos){
+            //    boto.style.fontsize = "2px"
+            //}
+            boto.classList.remove("f0")
+            boto.classList.add("f1");
+            
+        }
+        function menos(){
+            let boto = document.getElementById("div");
+            boto.classList.remove("f1")
+            boto.classList.add("f0");
+        }
+    </script>
+</body>
+
+</html>

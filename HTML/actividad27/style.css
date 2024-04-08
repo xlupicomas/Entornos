@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fdfdfd;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.hechas{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: rgba(255, 68, 0, 0.404);
+    border-radius: 10px;
+}
+.todas{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-color: skyblue;
+    border-radius: 10px;
+}
+h2{
+    color: white;
+    text-align: center;
+}
+h3{
+    color: white;
+}
+button{
+    border-radius: 25%;
+}
+.button2{
+    margin-left: 105px;
+    
+}
+.boton{
+    margin-left: 141px;
+    padding: 10px;
+}
+.TODOS{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    position: relative;
+    width: 450px;
+    height: 550px;
+    border-radius: 30px;
+    background: #ffffff79;
+    padding: 30px 50px;
+}
+
+h1 {
+    width: 100%;
+    font-weight: 600;
+    text-align: center;
+    color: #000000;
+    font-size: 1.75em;
+    margin-bottom: 10px;
+}
+
+
+#inputbox {
+    position: relative;
+    background-color: #5e5e5e50;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    border-radius: 30px;
+    font-size: 1em;
+}
+
+/* añadimos estilo a las listas creadas por js como?¿*/
+
+.TODOS li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3f5f80f3;
+    box-shadow: 10px 10px 10px white;
+    margin: 15px;
+    padding: 10px;
+    min-height: 45px;
+    cursor: pointer;
+    border-radius: 22.5px;
+    color: #fff;
+}
+.todas li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3f5f80f3;
+    box-shadow: 10px 10px 10px white;
+    margin: 15px;
+    padding: 10px;
+    min-height: 45px;
+    cursor: pointer;
+    border-radius: 22.5px;
+    color: #fff;
+}
+.separar{
+    left: -30px;
+ }
+
+.hechas li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3f5f80f3;
+    box-shadow: 10px 10px 10px white;
+    margin: 15px;
+    padding: 10px;
+    min-height: 45px;
+    cursor: pointer;
+    border-radius: 22.5px;
+    color: #fff;
+}
+.TODOS i{
+    position: relative;
+    background-color: rgba(255, 68, 0, 0.404);
+    right: 19px;
+    bottom: 48px;
+}
+.hechas i{
+    position: relative;
+    background-color: rgba(255, 68, 0, 0.404);
+    right: 19px;
+    bottom: 48px;
+}
+.todas i{
+    position: relative;
+    background-color: rgba(255, 68, 0, 0.404);
+    right: 19px;
+    bottom: 48px;
+}
+.doneAll{
+    text-decoration:line-through;
+    /* background-color: rgba(255, 68, 0, 0.527); */
+}
+.doneNone{
+    color: aqua;
+}
+.TODOS li.done{
+    background-color: rgba(255, 68, 0, 0.527);
+}
+.todas li.done{
+    background-color: rgba(255, 68, 0, 0.527);
+}
+.hechas li.done{
+    background-color: rgba(255, 68, 0, 0.527);
+}
+@media screen and (max-width: 1024px) {
+    .contenedor{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .hechas{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background-color: rgba(255, 68, 0, 0.404);
+        border-radius: 10px;
+    }
+    .TODOS{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        position: relative;
+        width: 450px;
+        height: 550px;
+        border-radius: 30px;
+        background: #ffffff79;
+        padding: 30px 50px;
+    }
+    .todas{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        background-color: skyblue;
+        border-radius: 10px;
+    }
+    
+    
+}

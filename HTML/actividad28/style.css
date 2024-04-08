@@ -1,0 +1,73 @@
+.centrado{
+    width: 70%;
+    text-align: justify;
+}
+.centrarinput{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr ;
+    padding-bottom: 10px;
+}
+.displayNone{
+    display: none;
+}
+input{
+    width: 100%;
+    border-color: gray;
+    padding: 15px 20px;
+    border-radius: 30px;
+    font-size: 1em;
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+.TODOS{
+    position: relative;
+    width: 65%;
+    height: 550px;
+    border-radius: 30px;
+    background: rgba(128, 128, 128, 0.418);
+    padding: 30px 50px;
+}
+.TODOS li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3f5f80f3;
+    box-shadow: 10px 10px 10px rgb(116, 116, 116);
+    margin: 15px;
+    padding: 10px;
+    min-height: 45px;
+    border-radius: 22.5px;
+    color: #fff;
+}
+.TODOS i{
+    position: relative;
+    background-color: red;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50px;
+
+}
+#button{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.centro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.divComent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+.divComent li{
+    padding-right: 97%;
+}

@@ -1,0 +1,24 @@
+h2{
+    background-color: #444;font-style: sans-serif; color: white; text-align: center;
+}
+.noticia{
+    font-style: arial; 
+    margin: 20px; 
+    border-bottom:1px solid #a7a6a6;
+}
+img{
+    width: 100px;
+    text-align: left;
+}
+h3{
+    color: rgb(0, 0, 109);
+    font-weight: bold;
+}
+a{
+    color: green;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(96, 10, 209);
+    text-decoration: underline;
+}

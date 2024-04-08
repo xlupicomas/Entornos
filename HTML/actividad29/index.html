@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/vader/jquery-ui.css">
+    <title>Pagina de Vuelos</title>
+</head>
+<body class="centrado">
+<h1>Vuelos Raimundo viajes por todo el mundo</h1>
+<div class="todo">
+<div class="contenedor">
+    <div class="carta">
+        <img src="16.1.jpg" alt="#">
+        <div class="dateDiv"><span class="dateInicio">2024-02-12</span><span class="dateFinal">2024-02-22</span></div>
+        <p class="precio" id="prueba">160€</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, reprehenderit necetibus? Nihil cum suscipit nesciunt</p>
+        <p class="country">Filipinas</p>
+        <a href="#"></a>
+    </div>
+    <div class="carta">
+        <img src="16.2.jpg" alt="#">
+        <div class="dateDiv"><span class="dateInicio">2024-02-01</span><span class="dateFinal">2024-02-04</span></div>
+        <p class="precio">120€</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, reprehenderit necetibus? Nihil cum suscipit nesciunt</p>
+        <p class="country">Chile</p>
+        <a href="#"></a>
+    </div>
+    <div class="carta">
+        <img src="16.3.jpg" alt="#">
+        <div class="dateDiv"><span class="dateInicio">2024-02-02</span><span class="dateFinal">2024-02-04</span></div>
+        <p class="precio">80€</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, reprehenderit necetibus? Nihil cum suscipit nesciunt</p>
+        <p class="country">España</p>
+        <a href="#"></a>
+    </div>
+    <div class="carta">
+        <img src="16.4.jpg" alt="#">
+        <div class="dateDiv"><span class="dateInicio">2024-02-26</span><span class="dateFinal">2024-03-1</span></div>
+        <p class="precio">180€</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, reprehenderit necetibus? Nihil cum suscipit nesciunt</p>
+        <p class="country">EEUU</p>
+        <a href="#"></a>
+    </div>
+    <div class="carta">
+        <img src="16.5.jpg" alt="#">
+        <div class="dateDiv"><span class="dateInicio">2024-02-06</span><span class="dateFinal">2024-02-08</span></div>
+        <p class="precio">140€</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, reprehenderit necetibus? Nihil cum suscipit nesciunt</p>
+        <p class="country">EEUU</p>
+        <a href="#"></a>
+    </div>
+    <div class="carta">
+        <img src="16.6.jpg" alt="#">
+        <div class="dateDiv"><span class="dateInicio">2024-03-08</span><span class="dateFinal">2024-03-16</span></div>
+        <p class="precio">160€</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, reprehenderit necetibus? Nihil cum suscipit nesciunt</p>
+        <p class="country">Chipre</p>
+        <a href="#"></a>
+    </div>
+    <div class="carta">
+        <img src="16.7.jpg" alt="#">
+        <div class="dateDiv"><span class="dateInicio">2024-02-04</span><span class="dateFinal">2024-02-09</span></div>
+        <p class="precio">200€</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, reprehenderit necetibus? Nihil cum suscipit nesciunt</p>
+        <p class="country">Cerdeña</p>
+        <a href="#"></a>
+    </div>
+    <div class="carta">
+        <img src="16.8.jpg" alt="#">
+        <div class="dateDiv"><span class="dateInicio">2024-02-09</span><span class="dateFinal">2024-02-11</span></div>
+        <p class="precio">150€</p> 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, reprehenderit necetibus? Nihil cum suscipit nesciunt</p>
+        <p class="country">Mallorca</p>
+        <a href="#"></a>
+    </div>
+</div>
+<div class="filtros">
+    <div class="slider" >
+            <div>
+                <h3 class="row1">precio minimo</h3>
+                <span id="rangeValue" class="precios">0</span>
+                <input class="range" type="range" id="row2" value="0" min="0" max="1000" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)">
+            </div>
+            <div>
+                <h3 class="row3">precio maximo</h3>
+                <span id="rangeValue2" class="precios">500</span>
+                <input class="range" type="range" id="row4" value2="500" min="0" max="1000" onChange="rangeSlide2(this.value)" onmousemove="rangeSlide2(this.value)">
+            </div>
+    </div>
+    <div class="fechas">
+        <div class="inicio">
+            <h2>INICIO</h2>
+            <input type="date" id="dateInicio">
+        </div>
+        <div class="Fin">
+            <h2>FIN</h2>
+            <input type="date" id="dateFinal">
+        </div>
+    </div>
+    <div class="autocompletar" id="autocompletar" >
+        <h2>LUGAR</h2>
+        <input type="text" id="search">
+    </div>
+    <div class="Filtrar">
+        <button id="Filtrar" onclick="searchPais(), searchPrice(), searchDate()">Filtrar</button>
+    </div>
+</div>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="index.js"></script>
+</html>

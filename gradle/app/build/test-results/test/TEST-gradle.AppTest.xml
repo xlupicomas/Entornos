@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gradle.AppTest" tests="22" skipped="0" failures="0" errors="0" timestamp="2024-02-26T19:11:38" hostname="DESKTOP-IOFS6O2" time="0.035">
+  <properties/>
+  <testcase name="appArrayRetornaDarrerBuit()" classname="gradle.AppTest" time="0.011"/>
+  <testcase name="appArrayRetornaDarrerNull()" classname="gradle.AppTest" time="0.0"/>
+  <testcase name="appArrayRetornaDarrerComplet()" classname="gradle.AppTest" time="0.0"/>
+  <testcase name="appArraysumarElementsComplet()" classname="gradle.AppTest" time="0.0"/>
+  <testcase name="appArraymitjanaElementsComplet()" classname="gradle.AppTest" time="0.001"/>
+  <testcase name="appArraysumarElementsBuit()" classname="gradle.AppTest" time="0.001"/>
+  <testcase name="appArraysumarElementsNull()" classname="gradle.AppTest" time="0.002"/>
+  <testcase name="appArraysumarElementsAmbNegatius()" classname="gradle.AppTest" time="0.0"/>
+  <testcase name="appArrayRetornaTercerBuit()" classname="gradle.AppTest" time="0.0"/>
+  <testcase name="appArrayRetornaTercerNull()" classname="gradle.AppTest" time="0.0"/>
+  <testcase name="appArrayRetornaPrimerAmbArrayBuit()" classname="gradle.AppTest" time="0.001"/>
+  <testcase name="appArrayRetornaPrimerAmbArrayNull()" classname="gradle.AppTest" time="0.001"/>
+  <testcase name="appArraymitjanaElementsBuit()" classname="gradle.AppTest" time="0.0"/>
+  <testcase name="appArraymitjanaElementsNull()" classname="gradle.AppTest" time="0.0"/>
+  <testcase name="appArrayRetornaPrimerAmbArrayComplet()" classname="gradle.AppTest" time="0.001"/>
+  <testcase name="appArrayRetornaTercerAmbMenysDeTres()" classname="gradle.AppTest" time="0.001"/>
+  <testcase name="appArraymitjanaElementsAmbNegatius()" classname="gradle.AppTest" time="0.0"/>
+  <testcase name="appArraymitjanaElements()" classname="gradle.AppTest" time="0.0"/>
+  <testcase name="appArrayRetornaTercerComplet()" classname="gradle.AppTest" time="0.0"/>
+  <testcase name="appArraycontarBuit()" classname="gradle.AppTest" time="0.001"/>
+  <testcase name="appArraycontarNull()" classname="gradle.AppTest" time="0.001"/>
+  <testcase name="appArraycontaCompletr()" classname="gradle.AppTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

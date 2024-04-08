@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>To Do List</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="hechas">
+            <h2>Done</h2>
+            <h3>___________________________________________</h3>
+            <ul id="hechas"></ul>
+        </div>
+        
+        <div class="TODOS">
+            <button class="boton" onclick="mas()">añadir</button>
+            <h1>To Do</h1>
+            <input type="text" id="inputbox"> 
+            <ul id="list"></ul>
+        </div>
+        <div class="todas">
+            <h2 id="Tipo">All</h2>
+            <button class="button2" onclick="ordenar()">ordenar</button>
+            <button class="button2" onclick="borrar()">borrar</button>
+            <h3>___________________________________________</h3>
+            <ul id="todas"></ul>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="index.js"></script>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>actividad 21</title>
+</head>
+<body>
+    <header>PRIMER EJERCICIO DE JS</header>
+    <button id="button">grande</button>
+    <button id="boton">pequeño</button>
+    <main>
+        <div id="div">
+            <p>Este texto esta en español</p>
+        </div>
+    </main>
+    <script>
+        const button = document.querySelector("button");
+        let Boolean
+        button.addEventListener("click", function() {
+            let titol = document.getElementById("div");
+
+            if(Boolean == true){
+                titol.textContent = "Este texto esta en español";
+                Boolean = false
+            }else{
+                titol.textContent = "this text are in english";
+                Boolean = true
+            }
+        });
+
+        const botonColor = document.getElementById("boton")
+        botonColor.addEventListener("mouseover", function() {
+            document.getElementById("boton").style.backgroundColor = "grey"
+        });
+        botonColor.addEventListener("mouseout", function() {
+            document.getElementById("boton").style.backgroundColor = "white" 
+        });
+
+    </script>
+</body>
+
+</html>

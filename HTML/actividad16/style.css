@@ -1,0 +1,18 @@
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+img{
+    width: 275px;
+    height: 375px;
+    border-radius: 10px;
+}
+div{
+    transition: all 300ms;
+    margin: 10px;
+    box-shadow: 1px 1px 1px rgba(124, 124, 124, 0.562);
+}
+div:hover{
+    transform:scale(1.05);
+}

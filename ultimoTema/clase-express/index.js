@@ -13,7 +13,6 @@ app.get('/usuaris', (req, res) => {
 })
 
 app.get('/usuari', (req, res) => {
-    //aqui hare el select
     personaID = req.query.id;
     resultadoSelect = 'SELECT * from Usuaris'
     const row = db.prepare('SELECT * from Usuaris WHERE id = ?').get(personaID);
@@ -28,7 +27,6 @@ app.get('/productes', (req, res) => {
 })
 
 app.get('/producte', (req, res) => {
-    //aqui hare el select
     personaID = req.query.id;
     resultadoSelect = 'SELECT * from Productes'
     const row = db.prepare('SELECT * from Productes WHERE id = ?').get(personaID);
@@ -38,24 +36,23 @@ app.get('/producte', (req, res) => {
 
 app.get('/comandes', (req, res) => {
   resultadoSelect = 'SELECT * from Comandes'
-  const rows = db.prepare('SELECT * from Comandes join Usuaris on Comandes.usuari_id = Usuaris.id join Productes on Productes.id = Comandes.producte_id').all();
+  const rows = db.prepare('SELECT Comandes.id, Comandes.usuari_id, Comandes.producte_id, Usuaris.nombre, Usuaris.email, Productes.nomb, Productes.preu from Comandes join Usuaris on Comandes.usuari_id = Usuaris.id join Productes on Productes.id = Comandes.producte_id').all();
   res.json(rows)
 })
 
 app.get('/comande', (req, res) => {
-    //aqui hare el select
     personaID = req.query.id;
     resultadoSelect = 'SELECT * from Comandes'
-    const row = db.prepare('SELECT * from Comandes join Usuaris on Comandes.usuari_id = Usuaris.id join Productes on Productes.id = Comandes.producte_id WHERE id = ?').get(personaID);
+    const row = db.prepare('SELECT Comandes.id, Comandes.usuari_id, Comandes.producte_id, Usuaris.nombre, Usuaris.email, Productes.nom, Productes.preu from Comandes join Usuaris on Comandes.usuari_id = Usuaris.id join Productes on Productes.id = Comandes.producte_id WHERE Comandes.id = ?').get(personaID);
     res.json(row)
   })
-app.post("/persona", (req, res) =>{
-    personasid =req.body.id;
-    console.log(personasid);
-    const rows = db.prepare('SELECT * from personas WHERE id = ?').get(personasid);
-    console.log(rows);
-    res.json(rows);
-})
+// app.post("/persona", (req, res) =>{
+//     personasid =req.body.id;
+//     console.log(personasid);
+//     const rows = db.prepare('SELECT * from personas WHERE id = ?').get(personasid);
+//     console.log(rows);
+//     res.json(rows);
+// })
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)

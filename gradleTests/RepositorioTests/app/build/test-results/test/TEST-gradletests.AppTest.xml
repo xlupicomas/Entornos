@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gradletests.AppTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2024-03-18T15:05:07" hostname="DESKTOP-IOFS6O2" time="0.029">
+  <properties/>
+  <testcase name="anadirUsuarioNull()" classname="gradletests.AppTest" time="0.012"/>
+  <testcase name="anadirLibro()" classname="gradletests.AppTest" time="0.002"/>
+  <testcase name="eliminarUsuario()" classname="gradletests.AppTest" time="0.0"/>
+  <testcase name="verLibroLeido()" classname="gradletests.AppTest" time="0.001"/>
+  <testcase name="eliminarLibro()" classname="gradletests.AppTest" time="0.001"/>
+  <testcase name="anadirLibroLeido()" classname="gradletests.AppTest" time="0.001"/>
+  <testcase name="anadirUsuario()" classname="gradletests.AppTest" time="0.001"/>
+  <testcase name="anadirLibroNull()" classname="gradletests.AppTest" time="0.001"/>
+  <testcase name="eliminarLibroNull()" classname="gradletests.AppTest" time="0.001"/>
+  <testcase name="verLibros()" classname="gradletests.AppTest" time="0.003"/>
+  <testcase name="eliminarUsuarioNull()" classname="gradletests.AppTest" time="0.001"/>
+  <system-out><![CDATA[gradletests.App$Libro@3b35a229
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -100,6 +100,68 @@ app.post('/comanda', (req, res) => {
 })
 
 
+// UPDATEEES
+
+
+app.get('/usuariUpdate', (req, res) => {
+  const id = req.query.id
+  const usuari = db.prepare('select * from Usuaris where id = ?').get(id)
+  res.render("usuariUpdate", {usuari: usuari});
+})
+
+app.post("/usuariUpdate", (req, res) => {
+  console.log(req.body)
+  if (req.body) {
+    if (req.body.nombre && req.body.email && req.body.id) {
+      const statement = db.prepare('UPDATE Usuaris SET nombre = ?, email = ? WHERE id = ?')
+      const info = statement.run( req.body.nombre, req.body.email, req.body.id)
+      console.log(info)
+    }
+  }
+  res.redirect("usuaris");
+})
+
+
+
+app.get('/productoUpdate', (req, res) => {
+  const id = req.query.id
+  const producto = db.prepare('select * from Productes where id = ?').get(id)
+  res.render("productoUpdate", {producto: producto});
+})
+
+app.post("/productoUpdate", (req, res) => {
+  console.log(req.body)
+  if (req.body) {
+    if (req.body.nom && req.body.preu && req.body.id) {
+      const statement = db.prepare('UPDATE Productes SET nom = ?, preu = ? WHERE id = ?')
+      const info = statement.run( req.body.nom, req.body.preu, req.body.id)
+      console.log(info)
+    }
+  }
+  res.redirect("productes");
+})
+
+app.get('/comandaUpdate', (req, res) => {
+  const id = req.query.id
+  const comanda = db.prepare('select * from Comandes where id = ?').get(id)
+  const rowsUsuaris = db.prepare('SELECT * from Usuaris').all()
+  const rowsProductes = db.prepare('SELECT * from Productes').all()
+  res.render("comandaUpdate", {comanda: comanda, usuaris: rowsUsuaris, productes:rowsProductes});
+})
+
+app.post("/comandaUpdate", (req, res) => {
+  console.log(req.body)
+  if (req.body) {
+    if (req.body.usuari_id && req.body.producte_id && req.body.id) {
+      const statement = db.prepare('UPDATE Comandes SET usuari_id = ?, producte_id = ? WHERE id = ?')
+      const info = statement.run( req.body.usuari_id, req.body.producte_id, req.body.id)
+      console.log(info)
+    }
+  }
+  res.redirect("comandas");
+})
+
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })

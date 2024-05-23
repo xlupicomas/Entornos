@@ -5,10 +5,8 @@
             <p class="h1">Usuarios</p>
             <% usuaris.forEach((usuari, index)=>{ %>
 
-                <p><a class="link-offset-2 link-underline link-underline-opacity-0 p-2 link-underline-opacity-100-hover scale"
-                        href="/detallitos?id=<%= usuari.id %>">
-                        <%= usuaris.nombre %>
-                    </a></p>
+                <p><a class="link-offset-2 link-underline link-underline-opacity-0 p-2 link-underline-opacity-100-hover scale" href="/detallitos?id=<%= usuari.id %>"><%= usuari.nombre %></a>
+                <a class="link-offset-2 link-underline link-underline-opacity-0 p-2 link-underline-opacity-100-hover scale" href="/usuariUpdate?id=<%= usuari.id %>">editar Usuario</a></p>
                 <% }) %>
         </div>
         <form>

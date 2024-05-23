@@ -5,7 +5,7 @@
 <p class="h1">Comandas</p>
 <% comandas.forEach((comandas, index)=>{ %>
     
-    <p class="link-offset-2 link-underline link-underline-opacity-0 p-2 link-underline-opacity-100-hover scale"><%= comandas.nombre %> , <%= comandas.nom %></p>
+    <p class="link-offset-2 link-underline link-underline-opacity-0 p-2 link-underline-opacity-100-hover scale"><%= comandas.nombre %> , <%= comandas.nom %> <a href="comandaUpdate?id=<%= comandas.id %>">Editar Comanda</a></p>
 <% }) %>
 </div>
 <form>

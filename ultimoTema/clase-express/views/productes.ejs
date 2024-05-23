@@ -5,7 +5,8 @@
 <p class="h1">Productes</p>
 <% productes.forEach((productes, index)=>{ %>
     
-    <p><a class="link-offset-2 link-underline link-underline-opacity-0 p-2 link-underline-opacity-100-hover scale" href="/detallitosProducto?id=<%= productes.id %>"><%= productes.nom %></a></p>
+    <p><a class="link-offset-2 link-underline link-underline-opacity-0 p-2 link-underline-opacity-100-hover scale" href="/detallitosProducto?id=<%= productes.id %>"><%= productes.nom %></a>
+        <a class="link-offset-2 link-underline link-underline-opacity-0 p-2 link-underline-opacity-100-hover scale" href="/productoUpdate?id=<%= productes.id %>">editar Producto</a></p>
 <% }) %>
 </div>
 <form>
